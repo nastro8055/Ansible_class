@@ -1,0 +1,5 @@
+---
+javaopenjdk8OnUbuntu: openjdk-8-jre
+javaopenjdk8OnRedHat: java-1.8.0-openjdk
+apache2OnUbuntu: apache2
+httpdOnRedHat: httpd
