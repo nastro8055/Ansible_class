@@ -4,12 +4,12 @@
   tasks:
           - name: I want to install apache2 in ubuntu ansible node 1
             apt:
-                    name: apache2
+                    name: "{{apache2OnUbuntu}}"
                     state: present
             when: ansible_os_family == "Debian"
 
           - name: I want to install apache2 in redhat node 2
             yum:
-                    name: httpd
+                    name: "{{httpdOnRedHat}}"
                     state: present
             when: ansible_os_family == "RedHat"
