@@ -13,7 +13,3 @@
                     name: httpd
                     state: present
             when: ansible_os_family == "RedHat"
-          - name: Start httpd service, if not started
-            yum:
-                    name: httpd
-                    state: started
