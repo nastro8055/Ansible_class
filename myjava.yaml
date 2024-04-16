@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: webservers
   become: yes
   tasks:
           - name: I want to install java jdk8 ubuntu server
