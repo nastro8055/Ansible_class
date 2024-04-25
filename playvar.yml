@@ -9,3 +9,11 @@
       - name: I want to display variable display
         debug:
           msg: "{{myvar1}}"
+      - name: I want to install git, tree and apache2
+        apt:
+          name: "{{item}}"
+          state: present
+        loop:
+        - "{{myvar1}}"
+        - "{{myvar2}}"
+        - "{{myvar3}}"
