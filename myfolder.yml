@@ -1,0 +1,9 @@
+---
+- hosts: 172.31.9.2
+  become: yes
+  tasks:
+    - name: I want to create a folder
+      file:
+        ansible.windows.win_file:
+        path: /home/ubuntu
+        state: directory
