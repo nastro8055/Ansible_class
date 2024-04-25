@@ -1,0 +1,19 @@
+---
+- hosts: 172.31.9.2
+  become: yes
+  tasks:
+    - name: I want to install tree
+      apt:
+        name: tree
+        state: present
+      tags: mytreetask
+    - name: I want to install apache2
+      apt:
+        name: apache2
+        state: present
+      tags: myapache2task
+    - name: I want to install git
+      apt:
+        name: git
+        state: present
+      tags: mygittask
