@@ -11,5 +11,5 @@
 
     - name: I want to replace apache2 with my jinja template
       template:
-        src: index.j2
+        src: demo.html
         dest: /var/www/html/index.html
