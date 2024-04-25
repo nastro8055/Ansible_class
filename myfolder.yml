@@ -4,6 +4,5 @@
   tasks:
     - name: I want to create a folder
       file:
-        ansible.windows.win_file:
         path: /home/ubuntu
         state: directory
