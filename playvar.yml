@@ -5,7 +5,7 @@
     myvar1: tree
     myvar2: git
     myvar3: apache2
-    tasks:
+  tasks:
       - name: I want to display variable display
         debug:
           msg: "{{myvar1}}"
