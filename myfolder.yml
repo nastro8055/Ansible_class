@@ -4,5 +4,5 @@
   tasks:
     - name: I want to create a folder
       file:
-        path: /home/ubuntu
+        path: /home/ubuntu/myfoldercreated
         state: directory
